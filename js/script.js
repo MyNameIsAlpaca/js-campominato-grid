@@ -16,9 +16,14 @@ startGame.addEventListener("click", function(){
 
     difficultChoose = document.getElementById("difficult-choose").value;
 
+    gridContainer.innerHTML = "";
+
     if(difficultChoose == "choose") {
         alert("Scegli una difficoltà!")
     } else if (difficultChoose == "hard") {
+
+        document.getElementById("grid-container").style.display = "flex";
+
         //creo le caselle
     
         for (let i = 1; i < 101; i++) {
@@ -27,9 +32,14 @@ startGame.addEventListener("click", function(){
         
             square.classList.add("hard-square", "square");
 
+
             //aggiungo la classe al container
 
             gridContainer.classList.add("grid-container-hard")
+
+            gridContainer.classList.remove("grid-container-easy")
+
+            gridContainer.classList.remove("grid-container-medium")
     
             //appendo le caselle al suo contenitore 
     
@@ -46,6 +56,10 @@ startGame.addEventListener("click", function(){
             })
         }
     }  else if (difficultChoose == "medium") {
+
+        document.getElementById("grid-container").style.display = "flex";
+
+        
         //creo le caselle
     
         for (let i = 1; i < 82; i++) {
@@ -56,7 +70,11 @@ startGame.addEventListener("click", function(){
 
             //aggiungo la classe al container
 
+            gridContainer.classList.remove("grid-container-easy")
+
             gridContainer.classList.add("grid-container-medium")
+
+            gridContainer.classList.remove("grid-container-hard")
     
             //appendo le caselle al suo contenitore 
     
@@ -73,6 +91,10 @@ startGame.addEventListener("click", function(){
             })
         }
     } else if (difficultChoose == "easy") {
+
+        document.getElementById("grid-container").style.display = "flex";
+
+         
         //creo le caselle
     
         for (let i = 1; i < 50; i++) {
@@ -84,6 +106,10 @@ startGame.addEventListener("click", function(){
             //aggiungo la classe al container
 
             gridContainer.classList.add("grid-container-easy")
+
+            gridContainer.classList.remove("grid-container-medium")
+
+            gridContainer.classList.remove("grid-container-hard")
     
             //appendo le caselle al suo contenitore 
     
@@ -102,6 +128,7 @@ startGame.addEventListener("click", function(){
     } 
 
 
+    
 
 
 });
