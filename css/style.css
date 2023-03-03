@@ -13,10 +13,26 @@
     justify-content: center;
 }
 
-.grid-container {
+.grid-container-hard {
     display: flex;
     flex-flow: row wrap;
     width: calc(40px * 10 + 2px);
+    margin: 70px auto;
+    border: 1px solid black;
+}
+
+.grid-container-medium {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(40px * 9 + 2px);
+    margin: 70px auto;
+    border: 1px solid black;
+}
+
+.grid-container-easy {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(40px * 7 + 2px);
     margin: 70px auto;
     border: 1px solid black;
 }
