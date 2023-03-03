@@ -53,6 +53,7 @@ startGame.addEventListener("click", function(){
             
             square.addEventListener("click", function(){
                 square.classList.add("colorBackground");
+                console.log(square.innerText);
             })
         }
     }  else if (difficultChoose == "medium") {
@@ -88,6 +89,7 @@ startGame.addEventListener("click", function(){
             
             square.addEventListener("click", function(){
                 square.classList.add("colorBackground");
+                console.log(square.innerText);
             })
         }
     } else if (difficultChoose == "easy") {
@@ -123,6 +125,7 @@ startGame.addEventListener("click", function(){
             
             square.addEventListener("click", function(){
                 square.classList.add("colorBackground");
+                console.log(square.innerText);
             })
         }
     } 
