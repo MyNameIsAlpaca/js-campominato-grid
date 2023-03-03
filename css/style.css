@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.square {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(40px * 10 + 2px);
+    margin: 70px auto;
+    border: 1px solid black;
+}
+
+.colorBackground {
+    background-color: aquamarine;
+}
