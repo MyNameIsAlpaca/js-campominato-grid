@@ -16,7 +16,6 @@ startGame.addEventListener("click", function(){
 
     difficultChoose = document.getElementById("difficult-choose").value;
 
-    console.log(difficultChoose)
     
     //creo le caselle
 
