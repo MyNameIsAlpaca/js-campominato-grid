@@ -35,7 +35,7 @@ startGame.addEventListener("click", function(){
 
             //aggiungo la classe al container
 
-            gridContainer.classList.add("grid-container-hard")
+            gridContainer.classList.add("grid-container-hard", "grid-container")
 
             gridContainer.classList.remove("grid-container-easy")
 
@@ -73,7 +73,7 @@ startGame.addEventListener("click", function(){
 
             gridContainer.classList.remove("grid-container-easy")
 
-            gridContainer.classList.add("grid-container-medium")
+            gridContainer.classList.add("grid-container-medium",  "grid-container")
 
             gridContainer.classList.remove("grid-container-hard")
     
@@ -107,7 +107,7 @@ startGame.addEventListener("click", function(){
 
             //aggiungo la classe al container
 
-            gridContainer.classList.add("grid-container-easy")
+            gridContainer.classList.add("grid-container-easy",  "grid-container")
 
             gridContainer.classList.remove("grid-container-medium")
 
